@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stitch (Experiment 626) - Resume</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #e0f2f7; /* Light blue background */
+            color: #263238; /* Dark blue-gray text */
+        }
+        .container {
+            max-width: 900px;
+        }
+        .section-title {
+            border-bottom: 2px solid #0288d1; /* Blue border */
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .skill-badge {
+            background-color: #0288d1;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 9999px; /* Fully rounded */
+            font-size: 0.875rem; /* text-sm */
+            font-weight: 600; /* font-semibold */
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            display: inline-block;
+        }
+        .back-button {
+            transition: all 0.2s ease-in-out;
+        }
+        .back-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center py-10 px-4">
+
+    <!-- Back Button -->
+    <div class="w-full max-w-4xl mb-6">
+        <a href="index.html" class="back-button inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+            Back to Home
+        </a>
+    </div>
+
+    <!-- Resume Container -->
+    <div class="container bg-white p-8 md:p-12 rounded-xl shadow-2xl">
+
+        <!-- Header Section -->
+        <header class="text-center mb-8">
+            <h1 class="text-5xl font-extrabold text-blue-700 mb-2">Stitch (Experiment 626)</h1>
+            <p class="text-xl text-gray-700 mb-4">Galactic Mischief Specialist | Cuddle Enthusiast | Guitar Virtuoso</p>
+            <div class="text-gray-600 text-sm">
+                <p><strong>Contact:</strong> OhanaMeansFamily@galaxy.com | 555-OHANA-626</p>
+                <p><strong>Location:</strong> Earth, Hawaiian Islands (currently)</p>
+            </div>
+        </header>
+
+        <!-- Profile Picture Section -->
+        <section class="mb-8 text-center">
+            <h2 class="text-3xl font-bold section-title text-gray-800">Profile Picture</h2>
+            <div class="flex justify-center items-center mb-4">
+                <img src="https://placehold.co/200x200/B3E5FC/0288D1?text=Stitch" alt="Stitch's Profile Picture" class="rounded-full border-4 border-blue-500 shadow-lg w-48 h-48 object-cover">
+            </div>
+            <p class="text-sm text-gray-600">A charming photo for your consideration.</p>
+        </section>
+
+        <!-- Summary -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold section-title text-gray-800">Summary</h2>
+            <p class="text-lg leading-relaxed text-gray-700">
+                Highly adaptable and genetically engineered extraterrestrial with unparalleled strength, intelligence, and a penchant for causing (and resolving) chaos. Proven track record in intergalactic escape, advanced piloting, and mastering various Earthly customs. Seeking a challenging role where my unique abilities can be utilized for the greater good, preferably involving music, surfing, and minimal destruction. Ohana means family, and family means no one gets left behind... or un-hired.
+            </p>
+        </section>
+
+        <!-- Experience -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold section-title text-gray-800">Experience</h2>
+
+            <div class="mb-6">
+                <h3 class="text-2xl font-semibold text-gray-800">Galactic Federation Fugitive & Earth Protector</h3>
+                <p class="text-lg text-gray-600">Earth, Hawaiian Islands | 2002 - Present</p>
+                <ul class="list-disc list-inside ml-4 text-gray-700">
+                    <li>Successfully evaded capture from highly trained Galactic Federation forces on multiple occasions.</li>
+                    <li>Transformed from a destructive experiment into a loving and contributing member of a human family.</li>
+                    <li>Utilized advanced combat skills and destructive capabilities to protect Earth from various alien threats.</li>
+                    <li>Developed strong interpersonal skills through integration into a complex social unit.</li>
+                    <li>Mastered the art of playing the ukulele and surfing, demonstrating rapid learning capabilities.</li>
+                </ul>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-2xl font-semibold text-gray-800">Chief Chaos Inducer (formerly)</h3>
+                <p class="text-lg text-gray-600">Planet Turo | Pre-2002</p>
+                <ul class="list-disc list-inside ml-4 text-gray-700">
+                    <li>Designed for maximum destruction and chaos, achieving 99.9% efficiency in property damage.</li>
+                    <li>Demonstrated exceptional proficiency in advanced weaponry and vehicle operation.</li>
+                    <li>Exhibited unparalleled speed, strength, and agility in various hostile environments.</li>
+                    <li>(Note: This phase of my career involved significant personal growth and a shift in priorities.)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold section-title text-gray-800">Skills</h2>
+            <div class="flex flex-wrap gap-2">
+                <span class="skill-badge">Superhuman Strength</span>
+                <span class="skill-badge">Advanced Intelligence</span>
+                <span class="skill-badge">Enhanced Agility</span>
+                <span class="skill-badge">Climbing Vertical Surfaces</span>
+                <span class="skill-badge">Bulletproof Skin</span>
+                <span class="skill-badge">Night Vision</span>
+                <span class="skill-badge">Ukulele Mastery</span>
+                <span class="skill-badge">Surfing</span>
+                <span class="skill-badge">Piloting Spaceships</span>
+                <span class="skill-badge">Intergalactic Communication</span>
+                <span class="skill-badge">Problem Solving (often after creating them)</span>
+                <span class="skill-badge">Family Values</span>
+                <span class="skill-badge">Cuddling</span>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold section-title text-gray-800">Education</h2>
+            <div class="mb-4">
+                <h3 class="text-2xl font-semibold text-gray-800">Genetically Engineered for Destruction</h3>
+                <p class="text-lg text-gray-600">Dr. Jumba Jookiba's Laboratory, Planet Turo | Graduation: N/A (Escaped)</p>
+                <ul class="list-disc list-inside ml-4 text-gray-700">
+                    <li>Comprehensive training in all forms of destruction and mayhem.</li>
+                    <li>Extensive practical application of advanced weaponry and combat techniques.</li>
+                </ul>
+            </div>
+            <div class="mb-4">
+                <h3 class="text-2xl font-semibold text-gray-800">Life Lessons from Lilo Pelekai</h3>
+                <p class="text-lg text-gray-600">Earth, Hawaiian Islands | Ongoing</p>
+                <ul class="list-disc list-inside ml-4 text-gray-700">
+                    <li>Received invaluable instruction on the concept of "Ohana" (family).</li>
+                    <li>Developed empathy, compassion, and a strong moral compass.</li>
+                    <li>Learned the importance of community and responsible behavior.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Interests -->
+        <section>
+            <h2 class="text-3xl font-bold section-title text-gray-800">Interests</h2>
+            <p class="text-lg leading-relaxed text-gray-700">
+                Surfing, playing the ukulele, Elvis Presley, causing minor (and sometimes major) disturbances, exploring new planets, eating coconut cake, and spending quality time with my Ohana.
+            </p>
+        </section>
+
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="text-center text-gray-500 text-sm mt-auto py-4">
+        <p>&copy; 2025 Galactic HR Department. Confidential Applicant Profile.</p>
+    </footer>
+
+</body>
+</html>
