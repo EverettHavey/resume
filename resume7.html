@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applicant Alpha - Jed "Dusty" Rider's Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+        .section-title {
+            border-bottom: 2px solid #60a5fa; /* Blue-400 */
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .back-button {
+            transition: all 0.2s ease-in-out;
+        }
+        .back-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center py-10 px-4">
+
+    <div class="w-full max-w-4xl mb-6">
+        <a href="index.html" class="back-button inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+            Back to Home
+        </a>
+    </div>
+
+    <div class="container bg-white p-8 md:p-12 rounded-xl shadow-2xl max-w-4xl">
+
+        <header class="text-center mb-8">
+            <h1 class="text-5xl font-extrabold text-gray-800 mb-2">Jed "Dusty" Rider</h1>
+            <p class="text-xl text-gray-600 mb-4">Seasoned Wrangler, Range Manager, Equestrian Expert</p>
+            <div class="text-gray-500 text-sm">
+                <p><strong>Contact:</strong> dusty.rider@ranchlife.com | (555) ROUNDUP</p>
+                <p><strong>Location:</strong> Lone Star Territory (formerly Pecos, TX)</p>
+            </div>
+        </header>
+
+        <section class="mb-8 text-center">
+            <h2 class="text-3xl font-bold section-title text-gray-800">Profile Picture</h2>
+            <div class="flex justify-center items-center mb-4">
+                <img src="images/cowboy.webp" alt="Jed 'Dusty' Rider's Profile Picture" class="rounded-full border-4 border-yellow-700 shadow-lg w-48 h-48 object-cover">
+            </div>
+            <p class="text-sm text-gray-600">A good hand is worth his weight in gold and grit.</p>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold section-title text-gray-800">Summary</h2>
+            <p class="text-lg leading-relaxed text-gray-700">
+                Highly experienced and dependable cowboy with over 20 years of dedicated service in ranch operations, livestock management, and open-range riding. Proven ability to handle diverse conditions, from adverse weather to challenging terrain, while ensuring animal welfare and operational efficiency. Adept at teamwork, problem-solving under pressure, and maintaining equipment. Seeking opportunities to apply extensive practical skills and unwavering work ethic to contribute to a thriving ranch or agricultural enterprise.
+            </p>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold section-title text-gray-800">Experience</h2>
+
+            <div class="mb-6">
+                <h3 class="text-2xl font-semibold text-gray-800">Head Wrangler & Ranch Hand</h3>
+                <p class="text-lg text-gray-600">Diamond Bar Ranch | Wyoming Territory | 2010 – Present</p>
+                <ul class="list-disc list-inside ml-4 text-gray-700">
+                    <li>Led and managed daily cattle drives, ensuring safe and efficient movement of livestock across vast territories.</li>
+                    <li>Oversaw health and well-being of herds, including branding, vaccinations, and treating ailments.</li>
+                    <li>Maintained and repaired fencing, corrals, and other ranch infrastructure.</li>
+                    <li>Trained and broke in new horses, developing them into reliable working mounts.</li>
+                    <li>Managed diverse range land, including pasture rotation and water source monitoring.</li>
+                </ul>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-2xl font-semibold text-gray-800">Rodeo Competitor (Bull Riding & Calf Roping)</h3>
+                <p class="text-lg text-gray-600">Various Circuit Rodeos | Western States | 2000 – 2009</p>
+                <ul class="list-disc list-inside ml-4 text-gray-700">
+                    <li>Demonstrated exceptional riding and roping prowess under competitive pressure.</li>
+                    <li>Cultivated discipline, quick reflexes, and an unyielding resolve in high-stakes environments.</li>
+                    <li>Maintained and prepared specialized equipment for optimal performance and safety.</li>
+                </ul>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-2xl font-semibold text-gray-800">Junior Ranch Hand</h3>
+                <p class="text-lg text-gray-600">Lazy S Ranch | Texas Panhandle | 1998 – 2000</p>
+                <ul class="list-disc list-inside ml-4 text-gray-700">
+                    <li>Assisted senior cowboys with daily chores, including feeding, mending fences, and general maintenance.</li>
+                    <li>Learned foundational skills in horsemanship, cattle handling, and range management.</li>
+                    <li>Developed strong work ethic and understanding of ranch operations from the ground up.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold section-title text-gray-800">Skills</h2>
+            <div class="flex flex-wrap gap-2">
+                <span class="bg-yellow-700 text-white px-3 py-1 rounded-full text-sm font-semibold">Horsemanship</span>
+                <span class="bg-yellow-700 text-white px-3 py-1 rounded-full text-sm font-semibold">Livestock Management</span>
+                <span class="bg-yellow-700 text-white px-3 py-1 rounded-full text-sm font-semibold">Roping & Branding</span>
+                <span class="bg-yellow-700 text-white px-3 py-1 rounded-full text-sm font-semibold">Trail Blazing</span>
+                <span class="bg-yellow-700 text-white px-3 py-1 rounded-full text-sm font-semibold">Veterinary First Aid</span>
+                <span class="bg-yellow-700 text-white px-3 py-1 rounded-full text-sm font-semibold">Equipment Maintenance</span>
+                <span class="bg-yellow-700 text-white px-3 py-1 rounded-full text-sm font-semibold">Navigation (Natural)</span>
+                <span class="bg-yellow-700 text-white px-3 py-1 rounded-full text-sm font-semibold">Outdoor Survival</span>
+                <span class="bg-yellow-700 text-white px-3 py-1 rounded-full text-sm font-semibold">Team Leadership</span>
+                <span class="bg-yellow-700 text-white px-3 py-1 rounded-full text-sm font-semibold">Fence Repair</span>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold section-title text-gray-800">Education</h2>
+            <div class="mb-4">
+                <h3 class="text-2xl font-semibold text-gray-800">The University of the Open Range</h3>
+                <p class="text-lg text-gray-600">Western Frontier | Lifelong Learning | Ongoing</p>
+                <ul class="list-disc list-inside ml-4 text-gray-700">
+                    <li>Practical mastery of animal behavior, weather patterns, and land management through direct experience.</li>
+                    <li>Developed advanced problem-solving skills in isolated and demanding environments.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold section-title text-gray-800">Projects</h2>
+            <div class="mb-4">
+                <h3 class="text-2xl font-semibold text-gray-800">Annual Cattle Drive (North Fork Trail)</h3>
+                <p class="text-lg text-gray-600">Successfully moved over 5,000 head of cattle across 300 miles each year.</p>
+                <ul class="list-disc list-inside ml-4 text-gray-700">
+                    <li>Coordinated logistics, managed a team of wranglers, and ensured minimal loss of livestock.</li>
+                    <li>Navigated challenging river crossings and mountainous terrain with precision.</li>
+                </ul>
+            </div>
+            <div class="mb-4">
+                <h3 class="text-2xl font-semibold text-gray-800">Emergency Winter Pasture Relocation</h3>
+                <p class="text-lg text-gray-600">Led efforts to move 1,200 cattle during an unexpected blizzard, preventing significant losses.</p>
+                <ul class="list-disc list-inside ml-4 text-gray-700">
+                    <li>Executed rapid decision-making and utilized advanced tracking techniques in severe conditions.</li>
+                    <li>Coordinated with neighboring ranches for temporary shelter and feed.</li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="text-center text-gray-500 text-sm mt-auto py-4">
+        <p>&copy; 2025 Galactic HR Department. Confidential Applicant Profile.</p>
+    </footer>
+
+</body>
+</html>
