@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applicant Alpha - Spongebob Squarepants' Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+        .section-title {
+            border-bottom: 2px solid #60a5fa; /* Blue-400 */
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .back-button {
+            transition: all 0.2s ease-in-out;
+        }
+        .back-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center py-10 px-4">
+
+    <div class="w-full max-w-4xl mb-6">
+        <a href="index.html" class="back-button inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+            Back to Home
+        </a>
+    </div>
+
+    <div class="container bg-white p-8 md:p-12 rounded-xl shadow-2xl max-w-4xl">
+
+        <header class="text-center mb-8">
+            <h1 class="text-5xl font-extrabold text-gray-800 mb-2">Spongebob Squarepants</h1>
+            <p class="text-xl text-gray-600 mb-4">Master Fry Cook, Enthusiastic Team Player, Bubble-Blowing Extraordinaire</p>
+            <div class="text-gray-500 text-sm">
+                <p><strong>Contact:</strong> spongebob@bikinitop.net | (555) FRY-COOK</p>
+                <p><strong>Location:</strong> 124 Conch Street, Bikini Bottom</p>
+            </div>
+        </header>
+
+        <section class="mb-8 text-center">
+            <h2 class="text-3xl font-bold section-title text-gray-800">Profile Picture</h2>
+            <div class="flex justify-center items-center mb-4">
+                <img src="images/spongebob.webp" alt="Spongebob Squarepants' Profile Picture" class="rounded-full border-4 border-blue-500 shadow-lg w-48 h-48 object-cover">
+            </div>
+            <p class="text-sm text-gray-600">Ready! Ready! Ready to work!</p>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold section-title text-gray-800">Summary</h2>
+            <p class="text-lg leading-relaxed text-gray-700">
+                Highly energetic and dedicated fry cook with over 20 years of experience in fast-paced culinary environments. Proven ability to create delicious Krabby Patties with unmatched efficiency and customer satisfaction. Expert in maintaining a cheerful and productive work atmosphere, fostering positive customer relations, and consistently exceeding quality standards. Eager to bring unparalleled enthusiasm and fry cooking mastery to a challenging and rewarding role.
+            </p>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold section-title text-gray-800">Experience</h2>
+
+            <div class="mb-6">
+                <h3 class="text-2xl font-semibold text-gray-800">Senior Fry Cook</h3>
+                <p class="text-lg text-gray-600">The Krusty Krab | Bikini Bottom | 2005 – Present</p>
+                <ul class="list-disc list-inside ml-4 text-gray-700">
+                    <li>Consistently prepared and served thousands of perfect Krabby Patties daily, maintaining top-tier quality and taste.</li>
+                    <li>Developed and implemented innovative "secret formula" enhancements, boosting customer loyalty and sales by 15%.</li>
+                    <li>Maintained a spotless grill and kitchen area, consistently passing health and safety inspections with flying colors.</li>
+                    <li>Trained new employees in the art of fry cooking and customer service, contributing to team efficiency.</li>
+                    <li>Managed high-volume orders during peak hours with exceptional speed and accuracy.</li>
+                </ul>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-2xl font-semibold text-gray-800">Jellyfishing Enthusiast & Amateur Comedian</h3>
+                <p class="text-lg text-gray-600">Jellyfish Fields | Bikini Bottom | Ongoing</p>
+                <ul class="list-disc list-inside ml-4 text-gray-700">
+                    <li>Demonstrated exceptional agility and pursuit skills in capturing jellyfish for recreational purposes (no harm intended!).</li>
+                    <li>Cultivated creative problem-solving and quick thinking in unexpected situations.</li>
+                    <li>Developed strong observational skills and a keen sense of humor, often entertaining friends and colleagues.</li>
+                </ul>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-2xl font-semibold text-gray-800">Cashier & Mascot</h3>
+                <p class="text-lg text-gray-600">Goo Lagoon Snack Shack | Bikini Bottom | 2002 – 2005</p>
+                <ul class="list-disc list-inside ml-4 text-gray-700">
+                    <li>Greeted customers with unparalleled enthusiasm, enhancing their beach experience.</li>
+                    <li>Handled cash and card transactions accurately, ensuring customer satisfaction.</li>
+                    <li>Participated in promotional events as the shack's cheerful mascot, attracting new clientele.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold section-title text-gray-800">Skills</h2>
+            <div class="flex flex-wrap gap-2">
+                <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Fry Cooking Mastery</span>
+                <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Customer Service Excellence</span>
+                <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Grill Maintenance</span>
+                <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Order Accuracy</span>
+                <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Enthusiasm & Positivity</span>
+                <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Bubble Blowing</span>
+                <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Jellyfishing (Recreational)</span>
+                <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Team Collaboration</span>
+                <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Time Management</span>
+                <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Ukulele Playing</span>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold section-title text-gray-800">Education</h2>
+            <div class="mb-4">
+                <h3 class="text-2xl font-semibold text-gray-800">Boating School</h3>
+                <p class="text-lg text-gray-600">Mrs. Puff's Boating School | Bikini Bottom | Ongoing (Perpetual Student)</p>
+                <ul class="list-disc list-inside ml-4 text-gray-700">
+                    <li>Consistently dedicated to learning, demonstrating perseverance in the face of ongoing challenges.</li>
+                    <li>Developed strong theoretical knowledge of boating rules and regulations.</li>
+                    <li>Committed to achieving mastery, despite numerous practical setbacks.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold section-title text-gray-800">Awards & Recognition</h2>
+            <div class="mb-4">
+                <h3 class="text-2xl font-semibold text-gray-800">Employee of the Month</h3>
+                <p class="text-lg text-gray-600">The Krusty Krab | Bikini Bottom | Awarded Multiple Times (374 Consecutive)</p>
+                <ul class="list-disc list-inside ml-4 text-gray-700">
+                    <li>Recognized for outstanding dedication, consistent performance, and positive attitude.</li>
+                    <li>Celebrated for maintaining the highest standards of fry cooking and customer satisfaction.</li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="text-center text-gray-500 text-sm mt-auto py-4">
+        <p>&copy; 2025 Galactic HR Department. Confidential Applicant Profile.</p>
+    </footer>
+
+</body>
+</html>
