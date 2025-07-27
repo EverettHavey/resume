@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grogu - Force-Sensitive Foundling</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+        .section-title {
+            border-bottom: 2px solid #60a5fa; /* Blue-400 */
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .back-button {
+            transition: all 0.2s ease-in-out;
+        }
+        .back-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center py-10 px-4">
+
+    <div class="w-full max-w-4xl mb-6">
+        <a href="index.html" class="back-button inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+            Back to Home
+        </a>
+    </div>
+
+    <div class="container bg-white p-8 md:p-12 rounded-xl shadow-2xl max-w-4xl">
+
+        <header class="text-center mb-8">
+            <h1 class="text-5xl font-extrabold text-gray-800 mb-2">Grogu (aka "Baby Yoda")</h1>
+            <p class="text-xl text-gray-600 mb-4">Force-Sensitive Foundling | Apprentice to Jedi Master Luke Skywalker | Protector of the Mandalorian Creed</p>
+            <div class="text-gray-500 text-sm">
+                <p><strong>Contact:</strong> (Communicates primarily through coos and gestures) | Best reached via Din Djarin, The Mandalorian</p>
+                <p><strong>Location:</strong> Currently Nomad, Various Locations Across the Outer Rim</p>
+            </div>
+        </header>
+
+        <section class="mb-8 text-center">
+            <h2 class="text-3xl font-bold section-title text-gray-800">Profile Picture</h2>
+            <div class="flex justify-center items-center mb-4">
+                <img src="images/babyyoda.webp" alt="Grogu Profile Picture" class="rounded-full border-4 border-green-500 shadow-lg w-48 h-48 object-cover">
+            </div>
+            <p class="text-sm text-gray-600">"This is the way."</p>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold section-title text-gray-800">Summary</h2>
+            <p class="text-lg leading-relaxed text-gray-700">
+                A highly Force-sensitive individual with an extraordinary aptitude for telekinesis and healing, demonstrated from an early age despite limited formal training. Possesses exceptional resilience, adaptability, and an innate ability to connect with others, particularly those who operate within strict codes of conduct. Proven track record of providing critical support in high-stakes combat situations and maintaining emotional stability under immense pressure. Seeking opportunities to further develop Force abilities and contribute to galactic stability, preferably with a steady supply of found snacks.
+            </p>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold section-title text-gray-800">Experience</h2>
+
+            <div class="mb-6">
+                <h3 class="text-2xl font-semibold text-gray-800">Foundling & Companion to The Mandalorian</h3>
+                <p class="text-lg text-gray-600">Various Planets, Outer Rim | Approximately 9 BBY – 9 ABY</p>
+                <ul class="list-disc list-inside ml-4 text-gray-700">
+                    <li>Survived numerous hostile encounters and bounties, often contributing to mission success through unexpected Force interventions.</li>
+                    <li>Utilized Force abilities (telekinetic pulls, pushes, and chokes) to disarm threats, retrieve objects, and protect primary guardian.</li>
+                    <li>Demonstrated rapid healing capabilities by mending severe injuries to allies.</li>
+                    <li>Developed strong non-verbal communication skills, conveying complex needs and observations effectively.</li>
+                    <li>Consistently served as a morale booster and emotional anchor for the crew, fostering loyalty and dedication.</li>
+                </ul>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-2xl font-semibold text-gray-800">Jedi Youngling</h3>
+                <p class="text-lg text-gray-600">Jedi Temple, Coruscant | Prior to 19 BBY</p>
+                <ul class="list-disc list-inside ml-4 text-gray-700">
+                    <li>Received foundational training in Force principles and lightsaber combat (basic level).</li>
+                    <li>Exhibited exceptional sensitivity to the Force from an early age, attracting the attention of senior Jedi Masters.</li>
+                    <li>Survived Order 66, demonstrating inherent resilience and survival instincts.</li>
+                </ul>
+            </div>
+
+             <div class="mb-6">
+                <h3 class="text-2xl font-semibold text-gray-800">Apprentice</h3>
+                <p class="text-lg text-gray-600">Jedi Temple on Ossus | Approximately 9 ABY</p>
+                <ul class="list-disc list-inside ml-4 text-gray-700">
+                    <li>Engaged in intensive training under Jedi Master Luke Skywalker, deepening understanding and control of Force abilities.</li>
+                    <li>Successfully retrieved Beskar chainmail, demonstrating adherence to cultural heritage while pursuing Jedi path.</li>
+                    <li>Made a crucial decision to follow the path of the Mandalorian, illustrating strong personal conviction and autonomy.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold section-title text-gray-800">Skills</h2>
+            <div class="flex flex-wrap gap-2">
+                <span class="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">Force Telekinesis</span>
+                <span class="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">Force Healing</span>
+                <span class="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">Emotional Support</span>
+                <span class="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">Non-Verbal Communication</span>
+                <span class="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">Acute Sensory Perception</span>
+                <span class="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">Resourcefulness</span>
+                <span class="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">Adaptability</span>
+                <span class="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">Problem-Solving (via Force)</span>
+                <span class="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">Strategic Eating</span>
+                <span class="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">Egg Consumption (Expert)</span>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold section-title text-gray-800">Awards & Recognition</h2>
+            <div class="mb-4">
+                <h3 class="text-2xl font-semibold text-gray-800">"The Asset"</h3>
+                <p class="text-lg text-gray-600">Recognized by Imperial remnants for high value Force abilities.</p>
+                <ul class="list-disc list-inside ml-4 text-gray-700">
+                    <li>Subject of extensive Imperial bounty efforts, confirming significant importance.</li>
+                </ul>
+            </div>
+            <div class="mb-4">
+                <h3 class="text-2xl font-semibold text-gray-800">"The Child"</h3>
+                <p class="text-lg text-gray-600">Popular designation among galactic citizens.</p>
+                <ul class="list-disc list-inside ml-4 text-gray-700">
+                    <li>Became a cultural phenomenon across numerous star systems.</li>
+                </ul>
+            </div>
+             <div class="mb-4">
+                <h3 class="text-2xl font-semibold text-gray-800">Foundling Status Confirmed</h3>
+                <p class="text-lg text-gray-600">Officially recognized by The Armorer of the Mandalorian covert.</p>
+                <ul class="list-disc list-inside ml-4 text-gray-700">
+                    <li>Successfully recited the Mandalorian creed, demonstrating commitment to its ways.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold section-title text-gray-800">Education</h2>
+            <div class="mb-4">
+                <h3 class="text-2xl font-semibold text-gray-800">Jedi Youngling Training</h3>
+                <p class="text-lg text-gray-600">Jedi Temple, Coruscant | Early Life (pre-Order 66)</p>
+                <ul class="list-disc list-inside ml-4 text-gray-700">
+                    <li>Learned foundational Jedi teachings and basic Force control.</li>
+                </ul>
+            </div>
+            <div class="mb-4">
+                <h3 class="text-2xl font-semibold text-gray-800">Apprenticeship Under Jedi Master Luke Skywalker</h3>
+                <p class="text-lg text-gray-600">Jedi Temple on Ossus | Approximately 9 ABY</p>
+                <ul class="list-disc list-inside ml-4 text-gray-700">
+                    <li>Received intensive, personalized instruction in advanced Force techniques.</li>
+                    <li>Developed stronger focus and emotional control necessary for Force manipulation.</li>
+                </ul>
+            </div>
+            <div class="mb-4">
+                <h3 class="text-2xl font-semibold text-gray-800">Mandalorian Foundling Protocol Training</h3>
+                <p class="text-lg text-gray-600">Various Mandalorian Coverts | Ongoing</p>
+                <ul class="list-disc list-inside ml-4 text-gray-700">
+                    <li>Gained practical experience in survival, stealth, and adherence to the Mandalorian Way.</li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="text-center text-gray-500 text-sm mt-auto py-4">
+        <p>&copy; 2025 Galactic HR Department. Confidential Applicant Profile.</p>
+    </footer>
+
+</body>
+</html>
