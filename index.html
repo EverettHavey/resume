@@ -20,6 +20,27 @@
             transform: translateY(-2px);
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
+        .header-main-nav-link {
+            transition: all 0.3s ease-in-out;
+            padding: 1rem 2rem;
+            font-weight: bold;
+            font-size: 1.25rem; /* text-xl */
+            border-radius: 0.5rem; /* rounded-lg */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+            text-align: center;
+            display: block; /* Make links block level for full button area */
+            width: 100%; /* Ensure they take full width in smaller views */
+        }
+        .header-main-nav-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+        .section-heading {
+            border-bottom: 2px solid;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
     </style>
 </head>
 <body class="min-h-screen flex flex-col items-center py-10 px-4">
@@ -29,6 +50,18 @@
         <h1 class="text-5xl font-extrabold text-blue-800 mb-4 rounded-lg p-3 bg-white shadow-lg">
             Welcome to the Galactic Resume Portal!
         </h1>
+        <nav class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <a href="#seasonal-applications" class="header-main-nav-link bg-red-600 text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-75">
+                Seasonal Applications
+            </a>
+            <a href="#characters" class="header-main-nav-link bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75">
+                Characters
+            </a>
+            <a href="#people" class="header-main-nav-link bg-green-600 text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75">
+                People
+            </a>
+        </nav>
+        
         <p class="text-xl text-gray-600">Explore the profiles of our esteemed applicants.</p>
     </header>
 
@@ -36,81 +69,13 @@
     <nav class="w-full max-w-4xl bg-white p-8 rounded-xl shadow-2xl mb-12">
         <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Applicant Resumes</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Stitch's Resume Link -->
-            <a href="stitch.html" class="nav-link block p-6 bg-gradient-to-br from-blue-500 to-purple-600 text-white rounded-lg shadow-md hover:from-blue-600 hover:to-purple-700 transform hover:scale-105 transition duration-300 ease-in-out text-center">
-                <h3 class="text-2xl font-semibold mb-2">Experiment 626 (Stitch)</h3>
-                <p class="text-sm opacity-90">Seeking a role in galactic chaos management.</p>
-            </a>
-
-            <!-- Blank Resume Links -->
-            <a href="resume1.html" class="nav-link block p-6 bg-gradient-to-br from-green-400 to-teal-500 text-white rounded-lg shadow-md hover:from-green-500 hover:to-teal-600 transform hover:scale-105 transition duration-300 ease-in-out text-center">
-                <h3 class="text-2xl font-semibold mb-2">Steve Salesman</h3>
-                <p class="text-sm opacity-90">Opportunities to craft, explore, and occasionally survive the night.</p>
-            </a>
-
-            <a href="resume2.html" class="nav-link block p-6 bg-gradient-to-br from-red-400 to-pink-500 text-white rounded-lg shadow-md hover:from-red-500 hover:to-pink-600 transform hover:scale-105 transition duration-300 ease-in-out text-center">
-                <h3 class="text-2xl font-semibold mb-2">The Genie</h3>
-                <p class="text-sm opacity-90">To bring monumental magic and boundless cheer to your every whim!</p>
-            </a>
-
-            <a href="resume3.html" class="nav-link block p-6 bg-gradient-to-br from-yellow-400 to-orange-500 text-white rounded-lg shadow-md hover:from-yellow-500 hover:to-orange-600 transform hover:scale-105 transition duration-300 ease-in-out text-center">
-                <h3 class="text-2xl font-semibold mb-2">Bob Ross</h3>
-                <p class="text-sm opacity-90">To help others find their happy little place and discover the joy of creation.</p>
-            </a>
-
-            <a href="resume4.html" class="nav-link block p-6 bg-gradient-to-br from-red-400 to-pink-500 text-white rounded-lg shadow-md hover:from-red-500 hover:to-pink-600 transform hover:scale-105 transition duration-300 ease-in-out text-center">
-                <h3 class="text-2xl font-semibold mb-2">Godzilla</h3>
-                <p class="text-sm opacity-90">Optimal urban demolition opportunities.</p>
-            </a>
-
-            <a href="resume5.html" class="nav-link block p-6 bg-gradient-to-br from-yellow-400 to-orange-500 text-white rounded-lg shadow-md hover:from-yellow-500 hover:to-orange-600 transform hover:scale-105 transition duration-300 ease-in-out text-center">
-                <h3 class="text-2xl font-semibold mb-2">Iron Man</h3>
-                <p class="text-sm opacity-90">laser-eradicate the office's mutating plants..</p>
-            </a>
-
-            <a href="resume6.html" class="nav-link block p-6 bg-gradient-to-br from-gray-700 to-gray-900 text-white rounded-lg shadow-md hover:from-gray-800 hover:to-gray-950 transform hover:scale-105 transition duration-300 ease-in-out text-center">
-                <h3 class="text-2xl font-semibold mb-2">Dwight K. Schrute</h3>
-                <p class="text-sm opacity-90">View Official (Assistant to the) Regional Manager Profile</p>
-            </a>
-            <a href="resume7.html" class="nav-link block p-6 bg-gradient-to-br from-yellow-700 to-yellow-900 text-white rounded-lg shadow-md hover:from-yellow-800 hover:to-yellow-950 transform hover:scale-105 transition duration-300 ease-in-out text-center">
-                <h3 class="text-2xl font-semibold mb-2">Jed "Dusty" Rider</h3>
-                <p class="text-sm opacity-90">View Official Wrangler & Range Manager Profile</p>
-            </a>
-            <a href="resume8.html" class="nav-link block p-6 bg-gradient-to-br from-green-500 to-green-700 text-white rounded-lg shadow-md hover:from-green-600 hover:to-green-800 transform hover:scale-105 transition duration-300 ease-in-out text-center">
-                <h3 class="text-2xl font-semibold mb-2">Cluck-Norris & Steed</h3>
-                <p class="text-sm opacity-90">View Elite Mounted Unit Profile</p>
-            </a>
-            <a href="resume9.html" class="nav-link block p-6 bg-gradient-to-br from-yellow-400 to-yellow-600 text-white rounded-lg shadow-md hover:from-yellow-500 hover:to-yellow-700 transform hover:scale-105 transition duration-300 ease-in-out text-center">
-                <h3 class="text-2xl font-semibold mb-2">Spongebob Squarepants</h3>
-                <p class="text-sm opacity-90">Fry Cook Extraordinaire Profile</p>
-            </a>
-            <a href="resume10.html" class="nav-link block p-6 bg-gradient-to-br from-teal-500 to-blue-700 text-white rounded-lg shadow-md hover:from-teal-600 hover:to-blue-800 transform hover:scale-105 transition duration-300 ease-in-out text-center">
-                <h3 class="text-2xl font-semibold mb-2">Unit 734 "A.I. Llama"</h3>
-                <p class="text-sm opacity-90">Advanced Algorithmic Profile</p>
-            </a>
             <a href="resume11.html" class="nav-link block p-6 bg-gradient-to-br from-red-500 to-red-700 text-white rounded-lg shadow-md hover:from-red-600 hover:to-red-800 transform hover:scale-105 transition duration-300 ease-in-out text-center">
                 <h3 class="text-2xl font-semibold mb-2">Red Wacky Waving Tube Man</h3>
                 <p class="text-sm opacity-90"> Dynamic Advertising Profile</p>
             </a>
-            <a href="resume12.html" class="nav-link block p-6 bg-gradient-to-br from-yellow-500 to-red-700 text-white rounded-lg shadow-md hover:from-red-600 hover:to-red-800 transform hover:scale-105 transition duration-300 ease-in-out text-center">
-                <h3 class="text-2xl font-semibold mb-2">Blaze Riley</h3>
-                <p class="text-sm opacity-90">Three-Time Cup Series Champion</p>
-            </a>
-            <a href="resume13.html" class="nav-link block p-6 bg-gradient-to-br from-gray-500 to-red-700 text-white rounded-lg shadow-md hover:from-red-600 hover:to-red-800 transform hover:scale-105 transition duration-300 ease-in-out text-center">
-                <h3 class="text-2xl font-semibold mb-2">Ren Lockhart</h3>
-                <p class="text-sm opacity-90">Three-Time Mastermind of Heists</p>
-            </a>
-            <a href="resume14.html" class="nav-link block p-6 bg-gradient-to-br from-blue-500 to-blue-700 text-white rounded-lg shadow-md hover:from-blue-600 hover:to-blue-800 transform hover:scale-105 transition duration-300 ease-in-out text-center">
-                <h3 class="text-2xl font-semibold mb-2">Marty McFly</h3>
-                <p class="text-sm opacity-90">Temporal Displacement & Paradox Resolution Specialist</p>
-            </a>
-            <a href="resume15.html" class="nav-link block p-6 bg-gradient-to-br from-green-500 to-green-700 text-white rounded-lg shadow-md hover:from-green-600 hover:to-green-800 transform hover:scale-105 transition duration-300 ease-in-out text-center">
-                <h3 class="text-2xl font-semibold mb-2">Grogu (Baby Yoda)</h3>
-                <p class="text-sm opacity-90">Force-Sensitive Foundling</p>
-            </a>
-            <a href="resume16.html" class="nav-link block p-6 bg-gradient-to-br from-purple-700 to-purple-900 text-white rounded-lg shadow-md hover:from-purple-800 hover:to-purple-950 transform hover:scale-105 transition duration-300 ease-in-out text-center">
-                <h3 class="text-2xl font-semibold mb-2">Thanos</h3>
-                <p class="text-sm opacity-90">Universal Balance Enforcer</p>
+            <a href="resume10.html" class="nav-link block p-6 bg-gradient-to-br from-teal-500 to-blue-700 text-white rounded-lg shadow-md hover:from-teal-600 hover:to-blue-800 transform hover:scale-105 transition duration-300 ease-in-out text-center">
+                <h3 class="text-2xl font-semibold mb-2">Unit 734 "A.I. Llama"</h3>
+                <p class="text-sm opacity-90">Advanced Algorithmic Profile</p>
             </a>
         </div>
     </nav>
